@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Fingerprint Authentication App</string>
+    <string name="SignInTitle">SIGN IN</string>
+    <string name="LoginButtonTitle">LOGIN</string>
+    <string name="HomeButtonTitle">GO BACK</string>
+    <string name="SignUpButtonTitle">SIGN UP</string>
+    <string name="SaveInformation">REGISTER</string>
+    <string name="title_activity_face_api">FACEAPIACTIVITY</string>
+    <string name="TouchMe">Touch the Fingerprint Sensor</string>
+</resources>

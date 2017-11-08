@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yenicefamily.comproject2.SignUpActivity">
+
+    <EditText
+        android:id="@+id/passwordRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Password2Register"
+        android:layout_alignLeft="@+id/usernameRegister"
+        android:layout_alignStart="@+id/usernameRegister"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="Type Password"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="145dp" />
+
+    <EditText
+        android:id="@+id/Password2Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/passwordRegister"
+        android:layout_alignStart="@+id/passwordRegister"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="Re-Type Password"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="216dp" />
+
+    <EditText
+        android:id="@+id/usernameRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/passwordRegister"
+        android:layout_marginBottom="21dp"
+        android:layout_toEndOf="@+id/button"
+        android:layout_toRightOf="@+id/button"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="74dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username : "
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="83dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_alignBaseline="@+id/usernameRegister"
+        android:layout_alignBottom="@+id/usernameRegister"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password : "
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="155dp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password : "
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="227dp"
+        android:layout_alignBaseline="@+id/passwordRegister"
+        android:layout_alignBottom="@+id/passwordRegister"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/HomeButtonTitle"
+        android:onClick="GoBackonClick"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="385dp"
+        android:layout_marginTop="47dp"
+        android:layout_below="@+id/Password2Register"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/SaveInformation"
+        android:onClick="RegisteronClick"
+        tools:layout_editor_absoluteX="224dp"
+        tools:layout_editor_absoluteY="385dp"
+        android:layout_marginRight="34dp"
+        android:layout_marginEnd="34dp"
+        android:layout_alignBaseline="@+id/button"
+        android:layout_alignBottom="@+id/button"
+        android:layout_alignRight="@+id/Password2Register"
+        android:layout_alignEnd="@+id/Password2Register" />
+
+</RelativeLayout>
